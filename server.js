@@ -19,11 +19,11 @@ app.use((request, response, next) => {
   next()
 })
 
-app.use((request, response, next) => {
-  response.render('maintenance.hbs', {
-    pageTitle: 'Sorry!'
-  })
-})
+// app.use((request, response, next) => {
+//   response.render('maintenance.hbs', {
+//     pageTitle: 'Sorry!'
+//   })
+// })
 
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
