@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> header}}
+</head>
+<body>
+    <p>My likings are:</p>
+
+    <ul>
+        {{#each like}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    {{> footer}}
+</body>
+</html>
